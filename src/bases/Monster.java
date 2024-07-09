@@ -15,10 +15,6 @@ public abstract class Monster extends Living{
 		
 		System.out.printf("%s が %s で攻撃！%s に %d のダメージを与えた。\n", this.name, this.weapon, target.getName(), damage);
 		
-		System.out.println(this.toString());
-		
-		System.out.println(target.toString());
-		
 	}
 
 	
