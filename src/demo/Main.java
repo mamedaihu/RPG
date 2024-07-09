@@ -68,12 +68,13 @@ public class Main {
 			
 			// モンスターのHPが0以下になれば、モンスターは倒れ、そのモンスターをモンスターグループから削除
 			if (monster.getHp() <= 0) {
-				monster.getName();
 				monsters.remove(monster);
 			}
 
 			// モンスターグループに誰もいなくなれば、人間グループの勝利
 			if (monsters.isEmpty()) {
+				System.out.println("\n★★ ==== 決着がついた！！ ==== ★★");
+				System.out.println("#### 人間達は勝利した！！ ####");
 				break;
 			}
 
@@ -90,7 +91,6 @@ public class Main {
 
 			// 人間のHPが0以下になれば、人間は倒れ、その人間をモンスターグループから削除
 			if (human.getHp() <= 0) {
-				human.getName();
 				humans.remove(human);
 			}
 
@@ -139,6 +139,8 @@ public class Main {
 		for (Monster monster : monsters) {
 			System.out.println(monster);
 		}
+		
+		
 	
 
 
