@@ -17,9 +17,6 @@ public abstract class Human extends Living{
 		
 		System.out.printf(" %s が %s で攻撃！%s に %d のダメージを与えた。しかし自分の攻撃力も1減少した。\n", this.name, this.weapon, target.getName(), damage);
 		
-		System.out.println(this.toString());
-		
-		System.out.println(target.toString());
 	}
 
 }
